@@ -1,0 +1,214 @@
+/*
+ usar flex-direction:row
+ */
+* {
+    color: black;
+    font-family: 'oranienbaum', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(189, 187, 187);
+}
+
+.a-1 {
+    color: black;
+}
+
+header {
+    background-image: url(./assets/culinaria.jpg);
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: flex;
+}
+
+.footer {
+    padding-left: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+.footer-div-1{
+    padding-left: 10vh;
+}
+
+.cabecalho-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 1vw;
+}
+
+h1 {
+    color: black;
+    font-size: 5vh;
+}
+
+a {
+    font-size: 2vh;
+    padding: 1vw;
+    text-transform: uppercase;
+}
+
+.nav-1 {
+    width: 45vw;
+    font-size: 15px;
+    /* color: black; */
+    /* border: 1px solid black; */
+}
+
+.cabecalho-img1 {
+    width: 3vw;
+}
+
+.cabecalho-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    gap: 10px;
+}
+
+.nav-2 {
+    /* color: black; */
+    padding-top: 25vh;
+    position: relative;
+    font-size: 12vh;
+    text-transform: uppercase;
+}
+
+.img-sessao {
+    width: 33.3vw;
+    object-fit: cover;
+    min-height: 20vh;
+}
+
+.secao-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h3 {
+    width: 38vw;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+#secao_botao {
+    width: 20vw;
+    background-color: #5f5454;
+    border: none;
+    border-radius: 2px;
+    height: 2.5vh;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 3vh;
+}
+
+.secao-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: auto;
+    position: relative;
+    padding-bottom: 1vh;
+}
+
+.img-secao-1{
+    width: 8vh;
+    height: 8vh;
+}
+footer {
+    align-items: center;
+}
+
+/* .img-foot {
+    background-image: url(); nao sei usa url '-'} 
+} */
+.cardapio {
+    /* border: 1px solid black; */
+    color: black;
+}
+
+.sub-cabecalho-2 {
+    color: black;
+}
+
+/* ------------------Mobile computer----------------- */
+
+@media screen and (min-width:771px) and (max-width:1200px) {
+    header {
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .nav-1 {
+        width: 45vw;
+        font-size: 23px;
+    }
+
+    h3 {
+        margin-top: 15px;
+        font-size: 35px;
+        width: 35vw;
+    }
+
+    .secao-1_paragrafo {
+        font-size: 20px;
+        font-weight: 400;
+        width: 70vw;
+        margin-top: 10px;
+    }
+
+    #secao-1_botao {
+        height: 5vh;
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    .img-sessao {
+        width: 30vw;
+    }
+}
+
+/* --------------------mobile tablets------------------ */
+
+@media screen and (min-device-width:550px) and (max-width: 770px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .nav-1 {
+        font-size: 20px;
+        width: 50vw;
+    }
+
+    .cabecalho-1 {
+        margin-top: 8vh;
+        gap: 30px;
+    }
+
+    .cabecalho-2 {
+        margin-top: 5vh;
+        gap: 30px;
+    }
+
+    .secao-1_paragrafo {
+        font-size: 13.5px;
+    }
+
+    #secao-1_botao {
+        width: 25vw;
+        height: 4vh;
+    }
+}
